@@ -59,10 +59,10 @@ You now have everything you need to start start developing with Cocos2D-Mono :)
 ## Tech Note
 Cocos2D-Mono is currently built with MonoGame Framework 3.8 and included as a nuget package, so no need to pull the MonoGame source code! (Unless you want to anyways, then go for it)
 
-## Getting Started : My UWP Sample
-W10M adapted samples is [here](https://github.com/mediaexplorer74/cocos2d-mono.Uwp/tree/main/Samples/Uwp/)
+## Getting Started : My UWP Sample as Your Game Template
+W10M adapted sample is [here](https://github.com/mediaexplorer74/cocos2d-mono.Uwp/tree/main/Samples/Uwp/)
 
-Feel free to clone it and dev your own little cocos2d-compatible game for Windows 10 Mobile os. 
+Feel free to clone it and dev your own little cocos2d-compatible game for Windows 10 Mobile os! 
 
 ## Referencies
 https://github.com/brandmooffin/cocos2d-mono/  Cocos2D-Mono
