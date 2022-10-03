@@ -7,7 +7,7 @@ Cocos2D-Mono focuses more on the MonoGame Framework and removes the limitations 
 I fix the problem that UWP sample not compiled normally for W10M target (reason: min. os build must be >=16299).
 
 ## Screenshots
-![showcase](Images/Shot1.png)
+![showcase](Images/shot1.png)
 
 # Build Status
 UWP: W10M with min. os build 15063 now supported. All Cocos2D-Mono adapted for this requaronments.
@@ -60,7 +60,7 @@ You now have everything you need to start start developing with Cocos2D-Mono :)
 Cocos2D-Mono is currently built with MonoGame Framework 3.8 and included as a nuget package, so no need to pull the MonoGame source code! (Unless you want to anyways, then go for it)
 
 ## Getting Started : My UWP Sample
-W10M adapted samples is [here](https://github.com/mediaexplorer/cocos2d-mono.UWP/tree/master/Samples/Uwp/Cocos2dMonoGame.Uwp)
+W10M adapted samples is [here](https://github.com/mediaexplorer/cocos2d-mono.UWP/Samples/Uwp/Cocos2dMonoGame.Uwp/)
 
 Feel free to clone it and dev your own little cocos2d-compatible game for Windows 10 Mobile os. 
 
