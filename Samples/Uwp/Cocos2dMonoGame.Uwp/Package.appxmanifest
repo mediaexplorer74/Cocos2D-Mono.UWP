@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="GodotTheme"
+    Publisher="CN=media"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="7e69a5e3-6c2a-4b0a-85fd-cd6a8d0bfa98" PhonePublisherId="10000022-0000-0001-0001-000000000001"/>
+
+  <Properties>
+    <DisplayName>Cocos2DMonoGame</DisplayName>
+    <PublisherDisplayName>media</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="Cocos2DMonoGame.Uwp.exe"
+      EntryPoint="Cocos2DMonoGame.Uwp.App">
+      <uap:VisualElements
+        DisplayName="Cocos2DMonoGame"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="Cocos2DMonoGame.Uwp.App"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

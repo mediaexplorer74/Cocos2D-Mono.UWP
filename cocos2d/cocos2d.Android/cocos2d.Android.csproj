@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF0247D4-6EF0-4F82-B22B-244D187B124D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cocos2d_mono.Android</RootNamespace>
+    <AssemblyName>Cocos2D</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj\Android\Debug</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Android\Debug\</OutputPath>
+    <IntermediateOutputPath>obj\Android\Debug</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\Android\Debug</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;ANDROID;OPENGL;GLES;MONOGAME</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Android\Release\</OutputPath>
+    <IntermediateOutputPath>obj\Android\Release</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\Android\Release</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ANDROID;OPENGL;GLES;MONOGAME</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\box2d\box2d.Android\box2d.Android.csproj">
+      <Project>{c0146e28-b1e0-4f07-8407-8411753500ea}</Project>
+      <Name>box2d.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task">
+      <Version>3.8.0.1641</Version>
+    </PackageReference>
+    <PackageReference Include="MonoGame.Framework.Android">
+      <Version>3.8.0.1641</Version>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Legacy.OpenTK">
+      <Version>1.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="..\cocos2d.projitems" Label="Shared" Condition="Exists('..\cocos2d.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

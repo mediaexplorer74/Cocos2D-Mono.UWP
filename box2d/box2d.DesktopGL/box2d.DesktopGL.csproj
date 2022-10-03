@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18AAFE9F-27FD-4B00-9AAC-14612319EA91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Box2D</RootNamespace>
+    <AssemblyName>Box2D</AssemblyName>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.3.2.0</Version>
+    <PackageId>box2d.DesktopGL</PackageId>
+    <Company>Broken Walls Studios</Company>
+    <Copyright>Copyright ©  2022 Cocos2D-Mono Team; Broken Walls Studios, LLC.</Copyright>
+    <Product>box2d for DesktopG</Product>
+    <Description>Box2D for DesktopGL (OpenGL Desktop Platforms)</Description>
+    <Authors>Broken Walls Studios; Cocos2d-Mono Team</Authors>
+    <Company>Broken Walls Studios</Company>
+    <Product>cocos2d-mono for DesktopGL</Product>
+    <PackageTags>mono monogame cocos2d game</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>Removed obsolete methods
+Update OpenTK Reference</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/brandmooffin/cocos2d-mono</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/brandmooffin/cocos2d-mono</RepositoryUrl>
+    <PackageIcon>logo-small.png</PackageIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\DesktopGL\Debug\</OutputPath>
+    <IntermediateOutputPath>obj\DesktopGL\Debug</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\DesktopGL\Debug</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWSGL;DESKTOPGL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\DesktopGL\Release\</OutputPath>
+    <IntermediateOutputPath>obj\DesktopGL\Release</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\DesktopGL\Release</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWSGL;DESKTOPGL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Logos\logo-small.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <Import Project="..\box2d.projitems" Label="Shared" />
+</Project>
